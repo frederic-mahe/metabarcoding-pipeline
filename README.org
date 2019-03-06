@@ -1,10 +1,33 @@
 #+TITLE: Fred's metabarcoding pipeline
 
+*(repository under construction, please do not use yet!)*
+
+Welcome!
+
+This repository presents a complete and up-to-date description of my
+metabarcoding pipeline (a replacement for [[https://github.com/frederic-mahe/swarm/wiki/Fred's-metabarcoding-pipeline][my old wiki]]).
+
+You can navigate the different steps using the sidebar on the right.
+
+An important characteristic of my pipeline is that the main filtering
+steps, including quality filtering, are performed *after*
+clustering. Swarm scales very well and there is no need to try to
+eliminate reads upstream to speed up the clustering step. Instead, my
+pipeline tries to preserve as much information as possible, as long as
+possible. It is only when producing the final OTU table that harsh
+filters are applied.
+
+Please feel free to comment or to contact me to discuss the different
+steps of the pipeline. Sequencing technologies change rapidly and the
+metabarcoding community is still far from having established a set of
+good practices for OTU picking. We should definitively have an open
+discussion about it.
+
+I intend to keep that page in sync with my own work, and to update it
+when new software versions or new publications rock the metabarcoding
+world.
+
 * introduction
-
-A complete description of my current metabarcoding pipeline
-
-(a replacement for [[https://github.com/frederic-mahe/swarm/wiki/Fred's-metabarcoding-pipeline][my old wiki]])
 
 Code is presented in code-blocks that can be copy-pasted and executed
 in a terminal.
@@ -20,3 +43,14 @@ Results are presented in text blocks or tables:
 #+BEGIN_SRC text
   This is a raw result
 #+END_SRC
+
+* Requirements and dependencies
+
+You will need to install [[https://github.com/torognes/vsearch][vsearch]], [[https://github.com/marcelm/cutadapt/][cutadapt]] and [[https://github.com/torognes/swarm][swarm]].
+
+The pipeline is written for bash version 4.0 or more recent, and it
+might not work with older versions. Please check your bash version
+number with ~bash --version~. MacOS users beware, Apple's Terminal
+used to provide an old version of bash (version 3).
+
+You will also need ~python 3~.
