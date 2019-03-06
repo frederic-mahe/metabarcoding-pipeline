@@ -1,4 +1,5 @@
 #+TITLE: Fred's metabarcoding pipeline
+#+OPTIONS: toc:2           (only two levels in TOC)
 
 *(repository under construction, please do not use yet!)*
 
@@ -27,7 +28,8 @@ I intend to keep that page in sync with my own work, and to update it
 when new software versions or new publications rock the metabarcoding
 world.
 
-* introduction
+
+** introduction
 
 Code is presented in code-blocks that can be copy-pasted and executed
 in a terminal.
@@ -44,7 +46,7 @@ Results are presented in text blocks or tables:
   This is a raw result
 #+END_SRC
 
-* Requirements and dependencies
+** Requirements and dependencies
 
 You will need to install [[https://github.com/torognes/vsearch][vsearch]], [[https://github.com/marcelm/cutadapt/][cutadapt]] and [[https://github.com/torognes/swarm][swarm]].
 
