@@ -1,0 +1,22 @@
+#+TITLE: Fred's metabarcoding pipeline
+
+* introduction
+
+A complete description of my current metabarcoding pipeline
+
+(a replacement for [[https://github.com/frederic-mahe/swarm/wiki/Fred's-metabarcoding-pipeline][my old wiki]])
+
+Code is presented in code-blocks that can be copy-pasted and executed
+in a terminal.
+
+#+BEGIN_SRC sh
+  echo "fun with fastq files!"
+  ls
+  head
+#+END_SRC
+
+Results are presented in text blocks or tables:
+
+#+BEGIN_SRC text
+  This is a raw result
+#+END_SRC
