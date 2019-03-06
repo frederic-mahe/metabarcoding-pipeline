@@ -28,6 +28,9 @@ I intend to keep that page in sync with my own work, and to update it
 when new software versions or new publications rock the metabarcoding
 world.
 
+*Table of Contents*
+- [[https://github.com/frederic-mahe/metabarcoding-pipeline#introduction][introduction]],
+- [[https://github.com/frederic-mahe/metabarcoding-pipeline#requirements-and-dependencies][Requirements and dependencies]],
 
 ** introduction
 
